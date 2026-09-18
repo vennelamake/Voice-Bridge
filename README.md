@@ -1,4 +1,3 @@
-Yes — **same content ni maintain chesthu**, unnecessary repetition remove chesi, GitHub lo professional ga kanipinche **medium-length polished README** idi:
 
 ````markdown
 # Voice Bridge
