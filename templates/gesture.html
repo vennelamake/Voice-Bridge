@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Recognition</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        img {
+            width: 720px;
+            max-width: 90%;
+            border: 3px solid #333;
+            border-radius: 10px;
+        }
+
+        .back {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Sign Language Recognition
+    </header>
+
+    <div class="container">
+
+        <h2>Show your hand gesture to the camera</h2>
+
+        <img src="{{ url_for('video_feed') }}" alt="Webcam">
+
+        <br>
+
+        <button class="back" onclick="location.href='/'">
+            Back to Home
+        </button>
+
+    </div>
+
+</body>
+</html>
